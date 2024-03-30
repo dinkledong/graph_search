@@ -1,2 +1,3 @@
 all:
-    gmcs -out:my_executable.exe Program.cs
+    make clean
+    gmcs -out:my_executable Program.cs
