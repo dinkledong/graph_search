@@ -1,18 +1,22 @@
 pipeline {
-    agent {
-        docker {
-            image 'cpp:latest' // Используем образ Docker с необходимыми инструментами для сборки C++ проекта
-        }
-    }
+    agent any // Используем любой доступный агент для запуска пайплайна
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/dinkledong/graph_search.git' // Клонируем ваш репозиторий
+                git branch: 'main', url: 'https://github.com/dinkledong/graph_search.git' // Клонируем ваш репозиторий, указывая ветку main
             }
         }
         stage('Build') {
+            environment {
+                DOCKER_IMAGE = 'cpp:latest'
+            }
             steps {
-                sh 'make' // Используем make для сборки проекта
+                script {
+                    docker.image(DOCKER_IMAGE).inside {
+                        sh 'make' // Используем make для сборки проекта
+                    }
+                }
             }
         }
         stage('Archive') {
@@ -21,6 +25,7 @@ pipeline {
             }
         }
     }
+
     post {
         success {
             echo 'Build successful! Archiving artifacts...'
