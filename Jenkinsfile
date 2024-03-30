@@ -4,19 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/dinkledong/graph_search.git' // Клонируем ваш репозиторий, указывая ветку main
+                git branch: 'main', url: 'https://github.com/your_username/your_cpp_project.git' // Клонируем ваш репозиторий, указывая ветку main
             }
         }
         stage('Build') {
-            environment {
-                DOCKER_IMAGE = 'cpp:latest'
-            }
             steps {
-                script {
-                    docker.image(DOCKER_IMAGE).inside {
-                        sh 'make' // Используем make для сборки проекта
-                    }
-                }
+                sh 'make' // Используем make для сборки проекта
             }
         }
         stage('Archive') {
