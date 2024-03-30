@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: '**/your_executable_file', fingerprint: true // Архивируем исполняемый файл
+                archiveArtifacts artifacts: '**/your_executable_file.exe', fingerprint: true // Архивируем исполняемый файл
             }
         }
     }
