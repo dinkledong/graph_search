@@ -1,0 +1,14 @@
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.exe
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.deps.json
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.runtimeconfig.json
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.runtimeconfig.dev.json
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.dll
+C:\Users\Acer\source\repos\Graph Search\bin\Debug\netcoreapp3.1\Graph Search.pdb
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.dll
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.pdb
+C:\Users\Acer\source\repos\Graph Search\obj\Debug\netcoreapp3.1\Graph Search.genruntimeconfig.cache
