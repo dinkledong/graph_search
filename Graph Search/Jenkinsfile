@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/dinkledong/graph_search.git' // Клонируем ваш репозиторий
+                git branch: 'main', url: 'https://github.com/your_username/your_cpp_project.git' // Клонируем ваш репозиторий, указывая ветку main
             }
         }
         stage('Build') {
